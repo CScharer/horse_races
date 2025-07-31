@@ -4,8 +4,8 @@
 This is an electronic version of the Kentucky Derby type horse racing game.
 
 It currently only contains:
-- The files needs for cooding and not anyting with regards to requirements.
-- The folder and image files that are empty.
+- The files needed for coding and not anyting with regards to requirements.
+- The files in the image folder are empty to pretend image files.
 - The rough draft version of the PyQt6 UI interface.
 
 Running the game:
