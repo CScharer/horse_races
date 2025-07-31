@@ -1,7 +1,4 @@
 import sys
-
-sys.path.append("..")  # Replace with the actual path
-
 from pathlib import Path
 # from pydantic import BaseModel
 # from typing import Optional
@@ -33,15 +30,15 @@ from PyQt6.QtWidgets import (
     QVBoxLayout,
     QWidget
 )
-from apis.helper_os import clear_console
-from horse_races.horse_races import (
+from horse_races import (
     DEFAULT_BUY_IN,
     DEFAULT_SCRATCHED_HORSE_COST,
     DEFAULT_SCRATCHED_HORSE_ORDER,
     IMAGE_FILES,
     HorseGame,
     Player,
-    Sort
+    Sort,
+    clear_console
 )
 
 class CustomSlider(QSlider):

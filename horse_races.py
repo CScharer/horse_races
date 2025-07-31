@@ -1,4 +1,5 @@
 import json
+import os
 import random
 import sys
 sys.path.append("..")  # Replace with the actual path
@@ -7,8 +8,11 @@ from enum import Enum
 from typing import Optional
 from pathlib import Path
 from pydantic import BaseModel
-from apis.helper_os import clear_console
 
+
+def clear_console() -> None:
+    command: str = "cls" if os.name in ("nt", "dos") else "clear"
+    os.system(command)
 
 class Sort(Enum):
     ASCENDING = "Ascending"
